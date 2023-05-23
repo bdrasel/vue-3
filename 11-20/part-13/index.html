@@ -19,11 +19,10 @@
 <body>
     <div id="app">
         <h1>Vue 3 fundamental</h1>
-        <input type="text" v-model="newSkill">
-        <button @click="addItem">add</button>
-        <ul>
-            <li v-for="(skill, index) in skills" @click="lineThrough(index)" :class="removeItem"> {{ skill }}</li>
-        </ul>
+        <input type="text" v-model="firstName" placeholder="Enter First Name">
+        <input type="text" v-model="lastName" placeholder="Enter Last Name">
+       
+        <h2>Full Name: {{ FullName }}</h2>
 
         
     </div>
