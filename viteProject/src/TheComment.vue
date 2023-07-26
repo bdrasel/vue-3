@@ -30,7 +30,7 @@ export default {
   methods: {
     handleInput(e) {
       this.$emit("update:modelValue", e.target.value);
-    }
+    },
   },
 };
 </script>

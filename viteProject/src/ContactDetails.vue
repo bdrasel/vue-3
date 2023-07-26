@@ -9,22 +9,7 @@
 
 <script>
 export default {
-  props: {
-    name: {
-      type: String,
-      required: true,
-    },
-    email: {
-      type: String,
-      required: false,
-      default: "N/A",
-    },
-    phone: {
-      type: String,
-      required: false,
-      default: "N/A",
-    },
-  },
+  inject: ["name", "email", "phone"],
   data() {
     return {
       message: "Hello World!",
